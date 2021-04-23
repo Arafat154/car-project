@@ -40,7 +40,7 @@ Ripple effect start
   position: relative;
 }
 .ripple {
-  background: rgba(255, 255, 255, .3);
+  background: rgba(255, 255, 255, 0.5);
   border-radius: 100%;
   display: block; 
   position: absolute;
@@ -83,11 +83,16 @@ Navbar start
 
 .nav-item{
    width: 100%;
-   padding: 0;
+   padding: 1.6rem;
+   display: inline-block;
 }
 .nav-link {
-   font-size: 1.4rem;
-   color: #fff;
+   font-size: 1.5rem;
+   color: #fff !important;
+   text-decoration: none;
+}
+.nav-link:hover{
+   text-decoration: none;
 }
 
 .navbar-brand img {
