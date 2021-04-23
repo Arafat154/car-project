@@ -160,7 +160,7 @@ Home start
    background: url(../img/bg/bg-1.jpg);
    background-size: cover;
    background-repeat: no-repeat;
-   background-position: center;
+   background-position: top center;
    display: grid;
    place-items: center;
 }
