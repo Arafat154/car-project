@@ -1,18 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Poppins:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 /*
 
 font-family: 'Poppins', sans-serif;
 font-family: 'PT Sans', sans-serif;
 
 */
-*{
+* {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
 }
-html{
+
+html {
    font-size: 62.5%;
 }
+
 :root {
    --main-color: #dd0707;
    --text-color: #3b3b3b;
@@ -22,6 +25,9 @@ html{
    --dark-gray: #282828;
    --dark-gray-2: #8c8c8c;
    --black-color: #000000;
+   --poppin: 'Poppins', sans-serif;
+   --pt: 'PT Sans', sans-serif;
+   --box-shadow1: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 /*-----------------
@@ -32,29 +38,59 @@ Common design start
 Common design end
 ---------------*/
 
+/*-------------
+Animation start
+-------------*/
+@keyframes bar{
+   0%{
+      left: -100%;
+   }
+   100%{
+      left: 100%;
+   }
+}
+@keyframes blink{
+   0%{
+      border: 0.3rem solid transparent;
+   }
+   50%{
+      border: 0.3rem solid var(--main-color);
+   }
+   100%{
+      border: 0.3rem solid transparent;
+   }
+}
+/*-----------
+Animation end 
+-----------*/
+
 /*-----------------
 Ripple effect start
 -----------------*/
 .prepare-ripple {
-  overflow: hidden;
-  position: relative;
+   overflow: hidden;
+   position: relative;
 }
+
 .ripple {
-  background: rgba(255, 255, 255, 0.5);
-  border-radius: 100%;
-  display: block; 
-  position: absolute;
-  transform: scale(0);
+   background: rgba(255, 255, 255, 0.5);
+   border-radius: 100%;
+   display: block;
+   position: absolute;
+   transform: scale(0);
 }
+
 .ripple.on-animate {
-  animation: ripple .65s linear;
+   animation: ripple .65s linear;
 }
+
 @keyframes ripple {
-  100% {
-    opacity: 0; 
-    transform: scale(2.5);
-  }
+   100% {
+      opacity: 0;
+      transform: scale(2.5);
+   }
 }
+
 /*---------------
 Ripple effect end
 ---------------*/
@@ -68,32 +104,36 @@ Navbar start
    padding-bottom: 1.5rem;
 }
 
-.navbar .navbar-toggler{
+.navbar .navbar-toggler {
    outline: none;
    border: none;
    font-size: 2rem;
 }
-.navbar button:focus{
+
+.navbar button:focus {
    box-shadow: none !important;
 }
+
 .navbar i {
-   color: #ff0000;
+   color: var(--main-color);
    font-size: 3rem;
 }
 
-.nav-item{
+.nav-item {
    padding: 1.3rem;
    display: inline-block;
    text-align: center;
    font-family: 'Poppins', sans-serif;
    font-weight: 600;
 }
+
 .nav-link {
    font-size: 1.5rem;
    color: #fff !important;
    text-decoration: none;
 }
-.nav-link:hover{
+
+.nav-link:hover {
    text-decoration: none;
 }
 
@@ -101,11 +141,12 @@ Navbar start
    width: 18rem;
 }
 
-.navbar .img{
+.navbar .img {
    width: 100%;
-   background: #fff;
+   background: var(--white-color);
    padding: 1.8rem 0 1.8rem 1.3rem;
 }
+
 /*--------
 Navbar end
 --------*/
@@ -113,12 +154,108 @@ Navbar end
 /*--------
 Home start
 --------*/
-#home{
+#home {
    width: 100%;
    height: 90vh;
    background: url(../img/bg/bg-1.jpg);
    background-size: cover;
    background-repeat: no-repeat;
+   display: grid;
+   place-items: center;
+}
+
+#home h3,
+#home h2,
+#home p {
+   margin: 0;
+   padding: 0;
+}
+
+#home h3 {
+   color: var(--white-color);
+   font-size: 2.5rem;
+   font-family: var(--poppin);
+   font-weight: 400;
+}
+
+#home h2 {
+   color: var(--white-color);
+   font-family: var(--pt);
+   font-size: 5rem;
+   font-weight: 600;
+}
+
+#home .red-text {
+   font-size: 5rem;
+   color: var(--main-color);
+   font-weight: 900;
+   font-family: var(--poppin);
+}
+
+#home p {
+   color: var(--white-color);
+   font-family: var(--pt);
+   font-size: 1.5rem;
+   font-weight: 400;
+   letter-spacing: 0.1rem;
+}
+
+#home .p2 {
+   font-family: var(--poppin);
+   font-size: 2.3rem;
+}
+
+#home .p2 .price {
+   font-family: var(--poppin);
+   font-weight: 900;
+   display: inline-block;
+   position: relative;
+   overflow-x: hidden;
+}
+
+#home .p2 .price::after {
+   left: 0;
+   content: '';
+   width: 100%;
+   height: 0.3rem;
+   background: var(--main-color);
+   position: absolute;
+   bottom: 0;
+   animation: bar 2s linear infinite;
+}
+#home button{
+   padding: 1.6rem 3rem;
+   margin: 2rem 0 4rem 0;
+   color: var(--white-color);
+   font-weight: 600;
+   font-family: var(--pt);
+   font-size: 2rem;
+   border-radius: 6rem;
+   outline: none;
+   border: 0.3rem solid var(--main-color);
+   background: transparent;
+   animation: blink 1.5s linear infinite;
+   transition: 0.5s;
+}
+#home button span{
+   width: 4rem;
+   height: 4rem;
+   display: inline-block;
+   border-radius: 50%;
+   background: var(--main-color);
+   margin-left: 1rem;
+   text-align: center;
+   line-height: 4rem;
+   transition: 0.5s;
+}
+#home button:hover{
+   background: var(--main-color);
+   animation: none;
+}
+#home button:hover span{
+   background: var(--white-color);
+   color: var(--black-color);
+   box-shadow: var(--box-shadow1);
 }
 /*------
 Home end 
