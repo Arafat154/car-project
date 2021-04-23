@@ -1,0 +1,1 @@
+$(function() { $(".ripple-btn, .nav-item, .box").rippleEffect() })
