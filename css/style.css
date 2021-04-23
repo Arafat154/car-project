@@ -1,23 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Poppins:wght@200;300;400&display=swap');
+/*
+
+font-family: 'Poppins', sans-serif;
+font-family: 'PT Sans', sans-serif;
+
+
 *{
    margin: 0;
    padding: 0;
    box-sizing: border-box;
 }
-.navbar{
+html{
+   font-size: 62.5%;
+}
+:root {
+   --main-color: #dd0707;
+   --text-color: #3b3b3b;
+   --heading-color: #000000;
+   --light-gray: #eeeeee;
+   --white-color: #ffffff;
+   --dark-gray: #282828;
+   --dark-gray-2: #8c8c8c;
+   --black-color: #000000;
+}
+
+/*-----------------
+Common design start
+-----------------*/
+
+/*---------------
+Common design end
+---------------*/
+
+/*-----------------
+Ripple effect start
+-----------------
+.prepare-ripple {
+  overflow: hidden;
+  position: relative;
+}
+.ripple {
+  background: rgba(255, 255, 255, .3);
+  border-radius: 100%;
+  display: block; 
+  position: absolute;
+  transform: scale(0);
+}
+.ripple.on-animate {
+  animation: ripple .65s linear;
+}
+@keyframes ripple {
+  100% {
+    opacity: 0; 
+    transform: scale(2.5);
+  }
+}
+/*---------------
+Ripple effect end
+---------------*/
+
+/*----------
+Navbar start
+----------
+.navbar {
    background: transparent;
    padding-top: 1.5rem;
    padding-bottom: 1.5rem;
 }
-.navbar button{
+
+.navbar button {
    outline: none;
 }
-.navbar i{
+.navbar i {
    color: #ff0000;
-   font-size: 30px;
+   font-size: 3rem;
 }
-.nav-link{
+
+.nav-item{
+   width: 100%;
+   background: blue;
+}
+.nav-link {
+   font-size: 1.4rem;
    color: #fff;
 }
-.navbar-brand img{
-   width: 10rem;
+
+.navbar-brand img {
+   width: 18rem;
 }
+/*--------
+Navbar end
+--------*/
+
+
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+
+body {
+  padding-top: 56px;
+}
+
+@media (max-width: 991.98px) {
+  .offcanvas-collapse {
+    position: fixed;
+    top: 56px; /* Height of navbar */
+    bottom: 0;
+    left: 100%;
+    width: 60%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: #343a40;
+    transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+  }
+  .offcanvas-collapse.open {
+    visibility: visible;
+    transform: translateX(-100%);
+  }
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  color: rgba(255, 255, 255, .75);
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-underline .nav-link {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: .875rem;
+  color: #6c757d;
+}
+
+.nav-underline .nav-link:hover {
+  color: #007bff;
+}
+
+.nav-underline .active {
+  font-weight: 500;
+  color: #343a40;
+}
+
+.text-white-50 { color: rgba(255, 255, 255, .5); }
+
+.bg-purple { background-color: #6f42c1; }

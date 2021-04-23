@@ -19,6 +19,21 @@
    
    <!-- ripple effect css -->
    <link rel="stylesheet" href="./css/ripple-effect.css" type="text/css" media="all" />
+   <style>
+      .bd-placeholder-img {
+         font-size: 1.125rem;
+         text-anchor: middle;
+         -webkit-user-select: none;
+         -moz-user-select: none;
+         user-select: none;
+      }
+
+      @media (min-width: 768px) {
+         .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+         }
+      }
+   </style>
    <!-- syle.css -->
    <link rel="stylesheet" href="./css/style.css" type="text/css" media="all" />
    <!-- mediaquery -->
@@ -27,63 +42,59 @@
 </head>
 
 <body>
-   <nav class="navbar navbar-expand-lg justify-content-sm-start fixed-top">
-      <div class="container">
-         <a class="navbar-brand" href="#"><img src="./img/others/c-brand.png" alt="" /></a>
-         <button class="navbar-toggler align-self-start" type="button">
-            <i class="fas fa-align-left"></i>
+   <div id="st-preloader">
+      <div class="st-preloader-wave">
+         <img src="./img/others/preloader.png" alt="preloader">
+      </div>
+   </div>
+   <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" aria-label="Main navigation">
+      <div class="container-fluid">
+         <a class="navbar-brand" href="#">Offcanvas navbar</a>
+         <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="offcanvas" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
          </button>
-         <div class="collapse navbar-collapse d-flex flex-column flex-lg-row flex-xl-row mobileMenu onRight" id="navbarNav">
-            <div class="img d-block d-lg-none">
-               <img src="./img/others/c-brand.png" alt="" />
-            </div>
-            <ul class="navbar-nav">
-               <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+         <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="#">Dropdown</a>
+                  <a class="nav-link" href="#">Notifications</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="#">Dropdown</a>
+                  <a class="nav-link" href="#">Profile</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  <a class="nav-link" href="#">Switch account</a>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Settings</a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                     <li><a class="dropdown-item" href="#">Action</a></li>
+                     <li><a class="dropdown-item" href="#">Another action</a></li>
+                     <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
                </li>
             </ul>
+            <form class="d-flex">
+               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+               <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
          </div>
       </div>
    </nav>
-   <div class="overlay"></div>-
-   <!--<nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
-      </button>
-      <span class="collapse-bg"></span>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-         <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-         </ul>
-      </div>
-   </nav>-->
    <!-- all javascript -->
-   <!-- jquery v-3.4.1-->
-   <script src="./js/jquery.min.js"></script>
-   <!-- bootstrap js v-4.3.1 -->
-   <script src="./js/popper.min.js"></script>
-   <script src="./js/bootstrap.min.js"></script>
+   <!-- bootstrap js v-5 -->
+   <script src="./js/bootstrap.bundle.min.js"></script>
+   <script type="text/javascript" charset="utf-8">
+      (function() {
+         'use strict'
+
+         document.querySelector('[data-bs-toggle="offcanvas"]').addEventListener('click', function() {
+            document.querySelector('.offcanvas-collapse').classList.toggle('open')
+         })
+      })()
+   </script>
    <!-- wow.js v-1.1.2 -->
    <!--<script src="wow.min.js"></script>
    <script>
