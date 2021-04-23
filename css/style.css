@@ -251,7 +251,7 @@ Home start
    animation: bar 2s linear infinite;
 }
 #home button{
-   padding: 1.6rem 3rem;
+   padding: 1rem 2rem;
    margin: 2rem 0 2rem 0;
    color: var(--white-color);
    font-weight: 600;
