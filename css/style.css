@@ -185,7 +185,7 @@ Home start
    border: 2px solid var(--main-color);
    border-radius: 10rem;
    position: absolute;
-   bottom: 4rem;
+   bottom: 2rem;
    left: 50%;
    transform: translateX(-50%);
 }
@@ -252,7 +252,7 @@ Home start
 }
 #home button{
    padding: 1.6rem 3rem;
-   margin: 2rem 0 4rem 0;
+   margin: 2rem 0 2rem 0;
    color: var(--white-color);
    font-weight: 600;
    font-family: var(--pt);
