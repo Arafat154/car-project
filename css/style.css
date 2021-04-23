@@ -33,7 +33,12 @@ html {
 /*-----------------
 Common design start
 -----------------*/
-
+h3,
+h2,
+p {
+   margin: 0;
+   padding: 0;
+}
 /*---------------
 Common design end
 ---------------*/
@@ -163,13 +168,6 @@ Home start
    background-position: bottom center;
    display: grid;
    place-items: center;
-}
-
-#home h3,
-#home h2,
-#home p {
-   margin: 0;
-   padding: 0;
 }
 
 #home h3 {
