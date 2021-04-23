@@ -22,7 +22,7 @@
 
    .nav-item {
       width: 100%;
-      padding: 1rem 0 1rem 1.4rem;
+      padding: 1.3rem 0 1.3rem 1.5rem;
       border-bottom: 1px solid rgba(255, 255, 255, 0.4);
       text-align: left;
    }
@@ -33,5 +33,16 @@
 
    .display-none {
       display: none;
+   }
+
+   .social-media {
+      width: 100%;
+      padding: 1.3rem 0 1.3rem 1.5rem;
+   }
+
+   .social-media a i {
+      text-decoration: none;
+      padding: 1.4rem;
+      display: inline-block;
    }
 }
