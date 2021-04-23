@@ -105,9 +105,9 @@ body {
 @media (max-width: 991.98px) {
   .offcanvas-collapse {
     position: fixed;
-    top: 56px; /* Height of navbar */
+    top: 0; /* Height of navbar */
     bottom: 0;
-    left: 100%;
+    left: -62%;
     width: 60%;
     padding-right: 1rem;
     padding-left: 1rem;
@@ -118,7 +118,7 @@ body {
   }
   .offcanvas-collapse.open {
     visibility: visible;
-    transform: translateX(-100%);
+    transform: translateX(100%);
   }
 }
 
