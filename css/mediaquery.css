@@ -26,4 +26,7 @@
    .navbar .img img{
       width: 18rem;
    }
+   .display-none{
+      display: none;
+   }
 }
