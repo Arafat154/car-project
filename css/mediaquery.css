@@ -14,10 +14,17 @@
       visibility: hidden;
       transition: transform 0.5s ease-in-out, visibility 0.5s ease-in-out;
       z-index: 999;
-      background: rgba(255, 255, 255, 0.25);
+      
+      /*background: rgba(255, 255, 255, 0.25);
       box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
       backdrop-filter: blur(4px);
       -webkit-backdrop-filter: blur(4px);
+      border: 1px solid rgba(255, 255, 255, 0.18);*/
+      
+      background: rgba(40, 40, 40, 0.25);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(8.5px);
+      -webkit-backdrop-filter: blur(8.5px);
       border: 1px solid rgba(255, 255, 255, 0.18);
    }
 
