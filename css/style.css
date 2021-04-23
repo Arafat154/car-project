@@ -83,6 +83,7 @@ Navbar start
 
 .nav-item{
    width: 100%;
+   padding: 0;
 }
 .nav-link {
    font-size: 1.4rem;
