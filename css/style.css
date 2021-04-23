@@ -68,8 +68,13 @@ Navbar start
    padding-bottom: 1.5rem;
 }
 
-.navbar button {
+.navbar .navbar-toggler{
    outline: none;
+   border: none;
+   font-size: 2rem;
+}
+.navbar button:focus{
+   box-shadow: none !important;
 }
 .navbar i {
    color: #ff0000;
@@ -78,8 +83,6 @@ Navbar start
 
 .nav-item{
    width: 100%;
-   padding: 1rem 0 1rem 1.4rem;
-   border-bottom: 1px solid rgba(255,255,255,0.4);
 }
 .nav-link {
    font-size: 1.4rem;
@@ -94,9 +97,6 @@ Navbar start
    width: 100%;
    background: #fff;
    padding: 1.8rem 0 1.8rem 1.3rem;
-}
-.navbar .img img{
-   width: 18rem;
 }
 /*--------
 Navbar end
