@@ -85,6 +85,8 @@ Navbar start
    padding: 1.3rem;
    display: inline-block;
    text-align: center;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 600;
 }
 .nav-link {
    font-size: 1.5rem;
