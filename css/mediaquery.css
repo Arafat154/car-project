@@ -54,11 +54,11 @@
 }
 @media (min-width:992px){
    html{
-      font-size: 90%;
+      font-size: 100%;
    }
 }
 @media (min-width:768px) {
    html{
-      font-size: 70%;
+      font-size: 90%;
    }
 }
