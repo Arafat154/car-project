@@ -4,7 +4,7 @@
 font-family: 'Poppins', sans-serif;
 font-family: 'PT Sans', sans-serif;
 
-
+*/
 *{
    margin: 0;
    padding: 0;
@@ -34,7 +34,7 @@ Common design end
 
 /*-----------------
 Ripple effect start
------------------
+-----------------*/
 .prepare-ripple {
   overflow: hidden;
   position: relative;
@@ -61,7 +61,7 @@ Ripple effect end
 
 /*----------
 Navbar start
-----------
+----------*/
 .navbar {
    background: transparent;
    padding-top: 1.5rem;
@@ -78,7 +78,8 @@ Navbar start
 
 .nav-item{
    width: 100%;
-   background: blue;
+   padding: 1rem 0 1rem 1.4rem;
+   border-bottom: 1px solid rgba(255,255,255,0.4);
 }
 .nav-link {
    font-size: 1.4rem;
@@ -88,75 +89,15 @@ Navbar start
 .navbar-brand img {
    width: 18rem;
 }
+
+.navbar .img{
+   width: 100%;
+   background: #fff;
+   padding: 1.8rem 0 1.8rem 1.3rem;
+}
+.navbar .img img{
+   width: 18rem;
+}
 /*--------
 Navbar end
 --------*/
-
-
-html,
-body {
-  overflow-x: hidden; /* Prevent scroll on narrow devices */
-}
-
-body {
-  padding-top: 56px;
-}
-
-@media (max-width: 991.98px) {
-  .offcanvas-collapse {
-    position: fixed;
-    top: 0; /* Height of navbar */
-    bottom: 0;
-    left: -62%;
-    width: 60%;
-    padding-right: 1.4rem;
-    padding-left: 1.4rem;
-    overflow-y: auto;
-    visibility: hidden;
-    background-color: #343a40;
-    transition: transform .3s ease-in-out, visibility .3s ease-in-out;
-  }
-  .offcanvas-collapse.open {
-    visibility: visible;
-    transform: translateX(100%);
-  }
-}
-
-.nav-scroller {
-  position: relative;
-  z-index: 2;
-  height: 2.75rem;
-  overflow-y: hidden;
-}
-
-.nav-scroller .nav {
-  display: flex;
-  flex-wrap: nowrap;
-  padding-bottom: 1rem;
-  margin-top: -1px;
-  overflow-x: auto;
-  color: rgba(255, 255, 255, .75);
-  text-align: center;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-}
-
-.nav-underline .nav-link {
-  padding-top: .75rem;
-  padding-bottom: .75rem;
-  font-size: .875rem;
-  color: #6c757d;
-}
-
-.nav-underline .nav-link:hover {
-  color: #007bff;
-}
-
-.nav-underline .active {
-  font-weight: 500;
-  color: #343a40;
-}
-
-.text-white-50 { color: rgba(255, 255, 255, .5); }
-
-.bg-purple { background-color: #6f42c1; }
