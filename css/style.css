@@ -33,7 +33,66 @@ p {
    margin: 0;
    padding: 0;
 }
+.button {
+   padding: 1rem 2rem;
+   margin: 2rem 0 2rem 0;
+   color: var(--white-color);
+   font-weight: 600;
+   font-family: var(--pt);
+   font-size: 2rem;
+   border-radius: 6rem;
+   outline: none;
+   border: 0.3rem solid var(--main-color);
+   background: transparent;
+   animation: blink 1.5s linear infinite;
+   transition: 0.5s;
+}
 
+.button .icon {
+   width: 4rem;
+   height: 4rem;
+   display: inline-block;
+   border-radius: 50%;
+   background: var(--main-color);
+   margin-left: 1rem;
+   text-align: center;
+   line-height: 4rem;
+   transition: 0.5s;
+}
+
+.button:hover {
+   background: var(--main-color);
+   animation: none;
+}
+
+.button:hover .icon {
+   background: var(--white-color);
+   color: var(--black-color);
+   box-shadow: var(--box-shadow1);
+}
+.thin-title{
+   color: var(--main-color);
+   font-size: 3rem;
+   font-family: var(--poppin);
+   font-weight: 400;
+}
+.bold-title{
+   color: var(--black-color);
+   font-size: 4rem;
+   font-family: var(--poppin);
+   font-weight: 600;
+}
+.section-text{
+   font-size: 1.7rem;
+   font-family: var(--pt);
+   font-weight: 400;
+   padding: 0 2rem 0 2rem;
+   color: var(--black-color):
+}
+.section-padding{
+   padding-top: 8rem;
+   padding-bottom: 8rem;
+}
 /*---------------
 Common design end
 ---------------*/
@@ -81,6 +140,23 @@ Animation start
    100% {
       margin-top: 5rem;
       opacity: 0;
+   }
+}
+
+@keyframes pulse {
+   0% {
+      transform: scale(.94);
+      box-shadow: 0 0 0 0 rgba(221, 7, 7, 0.7)
+   }
+
+   70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 2rem rgba(221, 7, 7, 0)
+   }
+
+   100% {
+      transform: scale(.94);
+      box-shadow: 0 0 0 0 rgba(221, 7, 7, 0)
    }
 }
 
@@ -163,6 +239,7 @@ Navbar start
    background: var(--white-color);
    padding: 1.8rem 0 1.8rem 1.3rem;
 }
+
 
 /*--------
 Navbar end
@@ -256,45 +333,40 @@ Home start
    bottom: 0;
    animation: bar 2s linear infinite;
 }
-
-#home button {
-   padding: 1rem 2rem;
-   margin: 2rem 0 2rem 0;
-   color: var(--white-color);
-   font-weight: 600;
-   font-family: var(--pt);
-   font-size: 2rem;
-   border-radius: 6rem;
-   outline: none;
-   border: 0.3rem solid var(--main-color);
-   background: transparent;
-   animation: blink 1.5s linear infinite;
-   transition: 0.5s;
-}
-
-#home button span {
-   width: 4rem;
-   height: 4rem;
-   display: inline-block;
-   border-radius: 50%;
-   background: var(--main-color);
-   margin-left: 1rem;
-   text-align: center;
-   line-height: 4rem;
-   transition: 0.5s;
-}
-
-#home button:hover {
-   background: var(--main-color);
-   animation: none;
-}
-
-#home button:hover span {
-   background: var(--white-color);
-   color: var(--black-color);
-   box-shadow: var(--box-shadow1);
-}
-
 /*------
 Home end 
 ------*/
+
+/*---------
+About start
+---------*/
+#about .button-box{
+   width: 80%;
+   overflow: hidden;
+}
+#about .button{
+   color: var(--black-color);
+   float: left;
+}
+#about .button .icon{
+   color: var(--white-color);
+}
+#about .button:hover .icon{
+   color: var(--black-color);
+}
+#about .button.play{
+   width: 6rem;
+   height: 6rem;
+   border-radius: 50%;
+   animation: pulse 1.3s linear infinite;
+   background: var(--main-color);
+   float: right;
+   margin-right: 2rem;
+   color: var(--white-color);
+}
+#about .button.play:hover{
+   animation: none;
+}
+/*-------
+About end 
+-------*/
