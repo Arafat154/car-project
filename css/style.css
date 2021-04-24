@@ -8,6 +8,7 @@
 
 html {
    font-size: 62.5%;
+   scroll-behavior: smooth;
 }
 
 :root {
@@ -21,7 +22,9 @@ html {
    --black-color: #000000;
    --poppin: 'Poppins', sans-serif;
    --pt: 'PT Sans', sans-serif;
-   --box-shadow1: 0 5px 15px rgba(0, 0, 0, 0.3);
+   /*--box-shadow1: 0 5px 15px rgba(0, 0, 0, 0.3);
+   --box-shadow2: 0px 10px 30px rgba(57, 56, 61, 0.205);*/
+   --box-shadow3: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 /*-----------------
@@ -33,6 +36,7 @@ p {
    margin: 0;
    padding: 0;
 }
+
 .button {
    padding: 1rem 2rem;
    margin: 2rem 0 2rem 0;
@@ -68,31 +72,36 @@ p {
 .button:hover .icon {
    background: var(--white-color);
    color: var(--black-color);
-   box-shadow: var(--box-shadow1);
+   box-shadow: var(--box-shadow3);
 }
-.thin-title{
+
+.thin-title {
    color: var(--main-color);
    font-size: 3rem;
    font-family: var(--poppin);
    font-weight: 400;
 }
-.bold-title{
+
+.bold-title {
    color: var(--black-color);
    font-size: 4rem;
    font-family: var(--poppin);
    font-weight: 600;
 }
-.section-text{
+
+.section-text {
    font-size: 1.7rem;
    font-family: var(--pt);
    font-weight: 400;
    padding: 0 2rem 0 2rem;
-   color: var(--black-color):
+   color: var(--black-color);
 }
-.section-padding{
+
+.section-padding {
    padding-top: 8rem;
    padding-bottom: 8rem;
 }
+
 /*---------------
 Common design end
 ---------------*/
@@ -333,6 +342,7 @@ Home start
    bottom: 0;
    animation: bar 2s linear infinite;
 }
+
 /*------
 Home end 
 ------*/
@@ -340,21 +350,25 @@ Home end
 /*---------
 About start
 ---------*/
-#about .button-box{
+#about .button-box {
    width: 80%;
    overflow: hidden;
 }
-#about .button{
+
+#about .button {
    color: var(--black-color);
    float: left;
 }
-#about .button .icon{
+
+#about .button .icon {
    color: var(--white-color);
 }
-#about .button:hover .icon{
+
+#about .button:hover .icon {
    color: var(--black-color);
 }
-#about .button.play{
+
+#about .button.play {
    width: 6rem;
    height: 6rem;
    border-radius: 50%;
@@ -364,9 +378,11 @@ About start
    margin-right: 2rem;
    color: var(--white-color);
 }
-#about .button.play:hover{
+
+#about .button.play:hover {
    animation: none;
 }
+
 /*-------
 About end 
 -------*/
