@@ -382,7 +382,9 @@ About start
 #about .button.play:hover {
    animation: none;
 }
-
+#about .container #compare{
+   margin-top: 3rem;
+}
 /*-------
 About end 
 -------*/
