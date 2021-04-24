@@ -61,3 +61,8 @@
       font-size: 90%;
    }
 }
+@media (max-width: 300px){
+   html{
+      font-size: 47%;
+   }
+}
