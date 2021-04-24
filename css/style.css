@@ -262,7 +262,6 @@ Home start
    height: 90vh;
    background: url(../img/bg/bg-1.jpg);
    background-size: cover;
-   background-attachment: fixed;
    background-repeat: no-repeat;
    background-position: bottom center;
    display: grid;
