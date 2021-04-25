@@ -153,9 +153,6 @@
    <script src="./js/uikit.min.js"></script>
    <script src="./js/uikit-icons.min.js"></script>
    
-   <!-- mixitup js -->
-   <script src="./js/mixitup.js"></script>
-   
    <!-- owl carousel cdn. v-2.3.4 -->
    <script src="./js/owl.carousel.min.js"></script>
    
@@ -165,16 +162,25 @@
    <!-- counter js v-1.0 -->
    <script src="./js/numscroller-1.0.js"></script>
    
+   <!-- main js -->
+   <script src="./js/main.js"></script>
+   
+   <!-- jquery noConflict -->
    <script type="text/javascript">var jQuery = $.noConflict(true);</script>
    
    <!-- jquery v-1.11.1 -->
    <script src="./js/jquery v-1.11.1.min.js"></script>
    
+   <!-- twentytwenty  -->
    <script src="./js/jquery.event.move.min.js"></script>
    <script src="./js/jquery.twentytwenty.min.js"></script>
    
-   <!-- main js -->
-   <script src="./js/main.js"></script>
+   <!-- twentytwenty initialization -->
+   <script type="text/javascript" charset="utf-8">
+      $(window).load(function() {
+         $("#compare").twentytwenty();
+      });
+   </script>
 </body>
 
 </html>

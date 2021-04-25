@@ -351,13 +351,11 @@ Home end
 About start
 ---------*/
 #about .button-box {
-   width: 80%;
-   overflow: hidden;
+   width: 40rem;
 }
 
 #about .button {
    color: var(--black-color);
-   float: left;
 }
 
 #about .button .icon {
@@ -374,8 +372,7 @@ About start
    border-radius: 50%;
    animation: pulse 1.3s linear infinite;
    background: var(--main-color);
-   float: right;
-   margin-right: 2rem;
+   margin-left: 2rem;
    color: var(--white-color);
 }
 
