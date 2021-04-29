@@ -394,12 +394,13 @@ Features start
    background: var(--light-gray);
 }
 #features img{
+   width: 100%;
    margin-bottom: 2rem;
    transition: 0.4s;
    border-radius: 0.6rem;
 }
 #features img:hover{
-   filter: brightness(120%);
+   filter: brightness(130%);
    box-shadow: var(--box-shadow3);
 }
 #features .content{
@@ -422,7 +423,6 @@ Features start
 }
 #features button:focus{
    background: var(--main-color);
-   border-color: var(--black-color);
    color: var(--white-color);
 }
 /*----------
