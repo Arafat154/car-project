@@ -386,3 +386,45 @@ About start
 /*-------
 About end 
 -------*/
+
+/*------------
+Features start
+------------*/
+#features{
+   background: var(--light-gray);
+}
+#features img{
+   margin-bottom: 2rem;
+   transition: 0.4s;
+   border-radius: 0.6rem;
+}
+#features img:hover{
+   filter: brightness(120%);
+   box-shadow: var(--box-shadow3);
+}
+#features .content{
+   padding: 2rem;
+}
+#features button{
+   padding: 1rem 2rem;
+   outline: none;
+   border: none;
+   font-size: 1.4rem;
+   margin-right: 1rem;
+   border: 0.2rem solid var(--main-color);
+   background: transparent;
+   transition: 0.5s;
+   font-family: var(--pt);
+   font-weight: 600;
+}
+#features button:last-child{
+   margin-right: 0;
+}
+#features button:focus{
+   background: var(--main-color);
+   border-color: var(--black-color);
+   color: var(--white-color);
+}
+/*----------
+Features end 
+----------*/
