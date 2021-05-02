@@ -9,12 +9,14 @@ var mixer = mixitup('.content');
 
 /*-------------owl carousel----------------*/
 $('.owl-carousel').owlCarousel({
-   loop: false,
+   loop: true,
    margin: 10,
    nav: false,
    dots: true,
-   autoplay: false,
-   autoplayTimeout: 2000,
+   animateIn: 'animate__bounceInRight',
+   autoplay: true,
+   autoplayTimeout: 3000,
+   autoplayHoverPause: true,
    responsive: {
       0: {
          items: 1
