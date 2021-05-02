@@ -406,7 +406,10 @@ Features start
 #features .content{
    padding: 2rem;
 }
-#features button{
+#features input[type="radio"]{
+   display: none;
+}
+#features label{
    padding: 1rem 2rem;
    outline: none;
    border: none;
@@ -421,9 +424,9 @@ Features start
 #features button:last-child{
    margin-right: 0;
 }
-#features button:focus{
+#features input[type="radio"]:checked+label {
    background: var(--main-color);
-   color: var(--white-color);
+   color: var(--white-color);;
 }
 /*----------
 Features end 
