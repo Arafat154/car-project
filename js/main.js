@@ -12,7 +12,7 @@ $('.owl-carousel').owlCarousel({
    loop: true,
    margin: 10,
    nav: false,
-   dots: true,
+   dots: false,
    animateIn: 'animate__bounceInRight',
    autoplay: true,
    autoplayTimeout: 3000,
