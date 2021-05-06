@@ -169,6 +169,52 @@ Animation start
    }
 }
 
+@keyframes humming {
+   0% {
+      transform: translate(0.5px, 0.5px) rotate(0deg);
+   }
+
+   10% {
+      transform: translate(-0.5px, -0.5px) rotate(-0.2deg);
+   }
+
+   20% {
+      transform: translate(-0.5px, 0px) rotate(0.2deg);
+   }
+
+   30% {
+      transform: translate(0.5px, 0.5px) rotate(0deg);
+   }
+
+   40% {
+      transform: translate(0.5px, -0.5px) rotate(0.2deg);
+   }
+
+   50% {
+      transform: translate(-0.5px, 0.5px) rotate(-0.2deg);
+   }
+
+   60% {
+      transform: translate(-0.5px, 0.5px) rotate(0deg);
+   }
+
+   70% {
+      transform: translate(0.5px, 0.5px) rotate(-0.2deg);
+   }
+
+   80% {
+      transform: translate(-0.5px, -0.5px) rotate(0.2deg);
+   }
+
+   90% {
+      transform: translate(0.5px, 0.5px) rotate(0deg);
+   }
+
+   100% {
+      transform: translate(0.5px, -0.5px) rotate(-0.2deg);
+   }
+}
+
 /*-----------
 Animation end 
 -----------*/
@@ -380,9 +426,11 @@ About start
 #about .button.play:hover {
    animation: none;
 }
-#about .container #compare{
+
+#about .container #compare {
    margin-top: 3rem;
 }
+
 /*-------
 About end 
 -------*/
@@ -390,26 +438,31 @@ About end
 /*------------
 Features start
 ------------*/
-#features{
+#features {
    background: var(--light-gray);
 }
-#features img{
+
+#features img {
    width: 100%;
    margin-bottom: 2rem;
    transition: 0.4s;
    border-radius: 0.6rem;
 }
-#features img:hover{
+
+#features img:hover {
    filter: brightness(130%);
    box-shadow: var(--box-shadow3);
 }
-#features .content{
+
+#features .content {
    padding: 2rem;
 }
-#features input[type="radio"]{
+
+#features input[type="radio"] {
    display: none;
 }
-#features label{
+
+#features label {
    padding: 1rem 2rem;
    outline: none;
    border: none;
@@ -421,13 +474,17 @@ Features start
    font-family: var(--pt);
    font-weight: 600;
 }
-#features button:last-child{
+
+#features button:last-child {
    margin-right: 0;
 }
+
 #features input[type="radio"]:checked+label {
    background: var(--main-color);
-   color: var(--white-color);;
+   color: var(--white-color);
+   ;
 }
+
 /*----------
 Features end 
 ----------*/
@@ -435,9 +492,10 @@ Features end
 /*--------------
 Variations start 
 --------------*/
-#variations img{
+#variations img {
    width: 100%;
 }
+
 /*-----------
 Variations end
 ------------*/
@@ -445,49 +503,69 @@ Variations end
 /*------------
 Specials start
 ------------*/
-#specials{
+#specials {
    background: var(--black-color);
 }
-#specials .sp{
+
+#specials .sp {
    color: var(--white-color);
    font-size: 4rem;
 }
-#specials .thin-title-sp{
+
+#specials .thin-title-sp {
    color: var(--white-color);
    font-family: var(--poppin);
    font-weight: 400;
    font-size: 1.7rem;
 }
-#specials .section-text{
+
+#specials .section-text {
    color: var(--white-color);
    padding: 2rem 0 0 0;
 }
-#specials .card{
+
+#specials .card {
    background: var(--black-color);
-   border: 0.1rem solid rgba(255,255,255,0.3);
+   border: 0.1rem solid rgba(255, 255, 255, 0.3);
    border-radius: 2rem;
    padding: 1rem 0.3rem;
 }
-#specials .card-text-1{
+
+#specials .card-text-1 {
    font-size: 1.7rem;
    color: var(--white-color);
    font-weight: 500;
    font-family: var(--poppin);
 }
-#specials .card-text-2{
+
+#specials .card-text-2 {
    font-size: 2.5rem;
    color: var(--main-color);
    padding-top: 1rem;
    font-weight: 500;
    font-family: var(--poppin);
 }
-#specials .card-text-3{
+
+#specials .card-text-3 {
    font-size: 2rem;
    color: var(--white-color);
    font-weight: 500;
    padding-top: 1rem;
    font-family: var(--poppin);
 }
+
+#specials audio {
+   display: none;
+}
+
+#specials .engine-image{
+   display: block;
+   margin: 4rem auto 0 auto;
+}
+#specials .engine-image.start-humming {
+   animation: humming 0.5s infinite;
+}
+
 /*----------
 Specials en
 ----------*/

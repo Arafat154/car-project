@@ -29,3 +29,13 @@ $('.owl-carousel').owlCarousel({
       }
    }
 })
+
+/*---------------audio start---------------*/
+$(".start-engine").on("click", function(e) {
+   var sound = document.getElementById("audio");
+   sound.play();
+   $('.engine-image').addClass("start-humming");
+   setTimeout(function() {
+      $('.engine-image').removeClass("start-humming")
+   }, 2500);
+});
