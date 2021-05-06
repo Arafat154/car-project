@@ -441,3 +441,27 @@ Variations start
 /*-----------
 Variations end
 ------------*/
+
+/*------------
+Specials start
+------------*/
+#specials{
+   background: var(--black-color);
+}
+#specials .sp{
+   color: var(--white-color);
+   font-size: 4rem;
+}
+#specials .thin-title-sp{
+   color: var(--white-color);
+   font-family: var(--poppin);
+   font-weight: 400;
+   font-size: 1.7rem;
+}
+#specials .section-text{
+   color: var(--white-color);
+   padding: 2rem 0 0 0;
+}
+/*----------
+Specials end
+----------*/
