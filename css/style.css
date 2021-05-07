@@ -101,7 +101,22 @@ p {
    padding-top: 8rem;
    padding-bottom: 8rem;
 }
-
+button[type="submit"]{
+   padding: 1.7rem 5rem;
+   margin-top: 2.5rem;
+   border-radius: 5rem;
+   font-size: 2rem;
+   color: var(--white-color);
+   background: var(--black-color);
+   border: 0.3rem solid var(--black-color);
+   transition: 0.5s;
+   font-family: var(--pt);
+   font-weight: 600;
+}
+button[type="submit"]:hover{
+   background: transparent;
+   color: var(--black-color);
+}
 /*---------------
 Common design end
 ---------------*/
@@ -478,7 +493,6 @@ Features start
 #features input[type="radio"]:checked+label {
    background: var(--main-color);
    color: var(--white-color);
-   ;
 }
 
 /*----------
@@ -610,25 +624,71 @@ Test ride start
    color: var(--white-color);
    border-width: 0.2rem;
 }
-::placeholder{
+#test-ride ::placeholder{
    color: var(--white-color) !important;
-}
-#test-ride button[type="submit"]{
-   padding: 1.7rem 5rem;
-   margin-top: 2.5rem;
-   border-radius: 5rem;
-   font-size: 2rem;
-   color: var(--white-color);
-   background: var(--black-color);
-   border: 0.3rem solid var(--black-color);
-   transition: 0.5s;
-   font-family: var(--pt);
-   font-weight: 600;
-}
-#test-ride button[type="submit"]:hover{
-   background: transparent;
-   color: var(--black-color);
 }
 /*-----------
 Test ride end
 -----------*/
+
+/*----------
+Dealer start 
+----------*/
+#dealer .form-control{
+   padding: 2rem;
+   border-radius: 3.5rem;
+   background: transparent;
+   font-size: 1.8rem;
+   font-family: var(--poppin);
+   color: var(--black-color);
+   border: 0.2rem solid var(--black-color);
+}
+/*--------
+Dealer end 
+--------*/
+
+/*----------
+Footer start 
+----------*/
+#footer{
+   background: var(--black-color);
+}
+#footer h3{
+   color: var(--white-color);
+   font-size: 2rem;
+   font-family: var(--poppin);
+   font-weight: 500;
+   margin-bottom: 3rem;
+}
+#footer img{
+   width: 20rem;
+   margin-bottom: 2rem;
+}
+#footer p{
+   color: rgba(255,255,255,0.4);
+   font-size: 1.4rem;
+   margin-bottom: 2rem;
+}
+#footer ul{
+   padding: 0;
+}
+#footer ul li{
+   list-style: none;
+   margin-top: 0.9rem;
+}
+#footer ul li a{
+   text-decoration: none;
+   font-size: 1.5rem;
+   color: var(--white-color);
+   transition: 0.4s;
+}
+#footer ul li a i{
+   color: var(--main-color);
+   font-size: 1.5rem;
+}
+#footer ul li a:hover{
+   color: var(--main-color);
+}
+/*--------
+Footer end 
+--------*/

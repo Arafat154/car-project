@@ -75,7 +75,8 @@
    #specials .card-text-3{
       font-size: 1.5rem;
    }
-   #test-ride .form-control{
+   #test-ride .form-control,
+   #dealer .form-control{
       padding: 1.5rem 1.2rem;
       font-size: 1.5rem;
    }
