@@ -63,15 +63,20 @@
       font-size: 90%;
    }
    #specials .card{
-      height: 22rem;
+      height: 24rem;
    }
    #specials .card-text-1{
+      margin-top: 1.5rem;
       font-size: 1.1rem;
    }
    #specials .card-text-2{
       font-size: 1.4rem;
    }
    #specials .card-text-3{
+      font-size: 1.5rem;
+   }
+   #test-ride .form-control{
+      padding: 1.5rem 1.2rem;
       font-size: 1.5rem;
    }
 }

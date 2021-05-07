@@ -590,3 +590,45 @@ Accessories start
 /*-------------
 Accessories end 
 -------------*/
+
+/*-------------
+Test ride start 
+-------------*/
+#test-ride{
+   background: var(--main-color);
+}
+#test-ride .bold-title{
+   color: var(--white-color);
+   margin-bottom: 2rem;
+}
+#test-ride .form-control{
+   padding: 2rem;
+   border-radius: 3.5rem;
+   background: transparent;
+   font-size: 1.8rem;
+   font-family: var(--poppin);
+   color: var(--white-color);
+   border-width: 0.2rem;
+}
+::placeholder{
+   color: var(--white-color) !important;
+}
+#test-ride button[type="submit"]{
+   padding: 1.7rem 5rem;
+   margin-top: 2.5rem;
+   border-radius: 5rem;
+   font-size: 2rem;
+   color: var(--white-color);
+   background: var(--black-color);
+   border: 0.3rem solid var(--black-color);
+   transition: 0.5s;
+   font-family: var(--pt);
+   font-weight: 600;
+}
+#test-ride button[type="submit"]:hover{
+   background: transparent;
+   color: var(--black-color);
+}
+/*-----------
+Test ride end
+-----------*/
