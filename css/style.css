@@ -678,8 +678,8 @@ Footer start
 }
 #footer ul li a{
    text-decoration: none;
-   font-size: 1.5rem;
-   color: var(--white-color);
+   font-size: 1.4rem;
+   color: rgba(255,255,255,0.4);
    transition: 0.4s;
 }
 #footer ul li a i{
@@ -687,6 +687,26 @@ Footer start
    font-size: 1.5rem;
 }
 #footer ul li a:hover{
+   color: var(--main-color);
+}
+#footer .col-4{
+   width: 4rem;
+}
+#footer .tag, p{
+   margin: 0;
+   padding: 0;
+   transition: 0.9s;
+   font-family: var(--poppin);
+}
+#footer .tag{
+   font-weight: 500;
+}
+#footer i{
+   margin-top: 0.5rem;
+   color: var(--light-gray);
+   font-size: 2rem;
+}
+#footer .row.color p:hover{
    color: var(--main-color);
 }
 /*--------
