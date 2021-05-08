@@ -6,6 +6,26 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    
+   <!-- open graph -->
+   <meta property="og:type" content="website"/>
+   <meta property="og:title" content="Find your dream car">
+   <meta property="og:description" content="The best place to find a car to make your dream true">
+   <meta property="og:image" content="https://og-image.vercel.app/WHEELS.png?theme=dark&md=0&fontSize=125px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fhyper-bw-logo.svg">
+   <meta property="og:url" content="https://arafat154.github.io/car-project/">
+   
+   <!-- twitter cards -->
+   <meta name="twitter:title" content="Find your dream car">
+   <meta name="twitter:description" content="The best place to find a car to make your dream true">
+   <meta name="twitter:image" content="https://og-image.vercel.app/WHEELS.png?theme=dark&md=0&fontSize=125px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fhyper-bw-logo.svg">
+   <meta name="twitter:card" content="summary_large_image">
+   
+   <!-- favicon -->
+   <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+   <link rel="icon" sizes="512×512" href="./img/favicon/android-chrome-512x512.png" type="image/x-icon"/>
+   <link rel="icon" sizes="192×192" href="./img/favicon/android-chrome-192x192.png" type="image/x-icon" />
+   
    <!-- bootstrap css v-5 -->
    <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css" media="all">
    
@@ -35,7 +55,12 @@
    <title>Wheels</title>
 </head>
 
-<body>
+<body onload="myFunction()">
+   
+   <!-- preloader -->
+   <div id="st-preloader">
+      <div class="st-preloader-wave"><img src="./img/others/preloader.png" alt="preloader"></div>
+   </div>
    
    <!--################ Navbar section start ####################-->
    <section id="navbar">
@@ -548,6 +573,14 @@
    <!-- jquery v-3.4.1 -->
    <script src="./js/jquery.min.js"></script>
    
+   <!--preloader-->
+   <script>
+   var preloader = document.getElementById('st-preloader');
+   function myFunction() {
+      preloader.style.display = 'none';
+   }
+   </script>
+   
    <!-- bootstrap js v-5 -->
    <script src="./js/bootstrap.bundle.min.js"></script>
    <script type="text/javascript" charset="utf-8">
@@ -574,12 +607,6 @@
    
    <!-- owl carousel cdn. v-2.3.4 -->
    <script src="./js/owl.carousel.min.js"></script>
-   
-   <!-- ripple effect -->
-   <script src="./js/ripple-effect.min.js"></script>
-   
-   <!-- counter js v-1.0 -->
-   <script src="./js/numscroller-1.0.js"></script>
    
    <script src="./js/BeerSlider.js"></script>
    
