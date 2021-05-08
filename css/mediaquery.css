@@ -81,10 +81,10 @@
       font-size: 1.5rem;
    }
    #footer{
-      padding-left: 2.5rem;
-      padding-right: 2.5rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
    }
-   .section-padding{
+   .navbar{
       padding-top: 9.3rem;
       padding-bottom: 9.3rem;
    }
