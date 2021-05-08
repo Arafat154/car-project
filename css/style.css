@@ -101,7 +101,8 @@ p {
    padding-top: 8rem;
    padding-bottom: 8rem;
 }
-.submit-btn{
+
+.submit-btn {
    padding: 1.7rem 5rem;
    margin-top: 2.5rem;
    border-radius: 5rem;
@@ -113,10 +114,12 @@ p {
    font-family: var(--pt);
    font-weight: 600;
 }
-.submit-btn:hover{
+
+.submit-btn:hover {
    background: transparent;
    color: var(--black-color);
 }
+
 /*---------------
 Common design end
 ---------------*/
@@ -568,10 +571,11 @@ Specials start
    display: none;
 }
 
-#specials .engine-image{
+#specials .engine-image {
    display: block;
    margin: 4rem auto 0 auto;
 }
+
 #specials .engine-image.start-humming {
    animation: humming 0.5s infinite;
 }
@@ -583,14 +587,15 @@ Specials en
 /*---------------
 Accessories start 
 ---------------*/
-#accessories .a-button{
+#accessories .a-button {
    width: 100%;
    background: url(../img/bg/bg-2.png);
    background-size: cover;
    background-repeat: no-repeat;
    padding: 2rem;
 }
-#accessories .button{
+
+#accessories .button {
    color: var(--black-color);
 }
 
@@ -601,6 +606,7 @@ Accessories start
 #accessories .button:hover .icon {
    color: var(--black-color);
 }
+
 /*-------------
 Accessories end 
 -------------*/
@@ -608,14 +614,16 @@ Accessories end
 /*-------------
 Test ride start 
 -------------*/
-#test-ride{
+#test-ride {
    background: var(--main-color);
 }
-#test-ride .bold-title{
+
+#test-ride .bold-title {
    color: var(--white-color);
    margin-bottom: 2rem;
 }
-#test-ride .form-control{
+
+#test-ride .form-control {
    padding: 2rem;
    border-radius: 3.5rem;
    background: transparent;
@@ -624,9 +632,11 @@ Test ride start
    color: var(--white-color);
    border-width: 0.2rem;
 }
-#test-ride ::placeholder{
+
+#test-ride ::placeholder {
    color: var(--white-color) !important;
 }
+
 /*-----------
 Test ride end
 -----------*/
@@ -634,7 +644,7 @@ Test ride end
 /*----------
 Dealer start 
 ----------*/
-#dealer .form-control{
+#dealer .form-control {
    padding: 2rem;
    border-radius: 3.5rem;
    background: transparent;
@@ -643,6 +653,7 @@ Dealer start
    color: var(--black-color);
    border: 0.2rem solid var(--black-color);
 }
+
 /*--------
 Dealer end 
 --------*/
@@ -650,66 +661,81 @@ Dealer end
 /*----------
 Footer start 
 ----------*/
-#footer{
+#footer {
    background: var(--black-color);
 }
-#footer h3{
+
+#footer h3 {
    color: var(--white-color);
    font-size: 2rem;
    font-family: var(--poppin);
    font-weight: 500;
    margin-bottom: 3rem;
 }
-#footer img{
+
+#footer img {
    width: 20rem;
    margin-bottom: 2rem;
 }
-#footer p{
-   color: rgba(255,255,255,0.4);
+
+#footer p {
+   color: rgba(255, 255, 255, 0.4);
    font-size: 1.4rem;
    margin-bottom: 2rem;
 }
-#footer ul{
+
+#footer ul {
    padding: 0;
 }
-#footer ul li{
+
+#footer ul li {
    list-style: none;
    margin-top: 0.9rem;
 }
-#footer ul li a{
+
+#footer ul li a {
    text-decoration: none;
    font-size: 1.4rem;
-   color: rgba(255,255,255,0.4);
+   color: rgba(255, 255, 255, 0.4);
    transition: 0.4s;
 }
-#footer ul li a i{
+
+#footer ul li a i {
    color: var(--main-color);
    font-size: 1.5rem;
 }
-#footer ul li a:hover{
+
+#footer ul li a:hover {
    color: var(--main-color);
 }
-#footer .col-4{
+
+#footer .col-4 {
    width: 4rem;
 }
-#footer .tag, p{
+
+#footer .tag,
+p {
    margin: 0;
    padding: 0;
    transition: 0.9s;
    font-family: var(--poppin);
 }
-#footer .tag{
+
+#footer .tag {
    font-weight: 500;
 }
-#footer i{
+
+#footer i {
    margin-top: 0.5rem;
    color: var(--light-gray);
    font-size: 2rem;
 }
-#footer .row.color p:hover{
+
+#footer .row.color p:hover {
    color: var(--main-color);
 }
-#footer form input{
+
+#footer form input {
    padding: 1.5rem 1.3rem;
    width: 27rem;
    color: var(--black-color);
@@ -719,11 +745,13 @@ Footer start
    font-size: 1.5rem;
    margin-bottom: 2rem;
 }
-#footer form .relative{
+
+#footer form .relative {
    position: relative;
 }
-#footer form button{
-   width: 5rem; 
+
+#footer form button {
+   width: 5rem;
    height: 5rem;
    border-radius: 50%;
    background: var(--main-color);
@@ -735,7 +763,8 @@ Footer start
    top: 0.1rem;
    left: 21.8rem;
 }
-#footer .bottom-icon li{
+
+#footer .bottom-icon li {
    display: inline-block;
    width: 5rem;
    height: 5rem;
@@ -745,20 +774,26 @@ Footer start
    margin-right: 1.5rem;
    transition: 0.5s;
 }
-#footer .bottom-icon li:hover{
+
+#footer .bottom-icon li:hover {
    background: var(--main-color);
 }
-#footer .bottom-icon li a{
+
+#footer .bottom-icon li a {
    line-height: 6rem;
 }
-#footer .bottom-icon li a i{
+
+#footer .bottom-icon li a i {
    color: var(--dark-gray-2);
    font-size: 2.2rem;
    transition: 0.5s;
 }
-#footer .bottom-icon li:hover i{
-   color: var(--white-color);;
+
+#footer .bottom-icon li:hover i {
+   color: var(--white-color);
+   ;
 }
+
 /*--------
 Footer end 
 --------*/
