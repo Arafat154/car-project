@@ -101,7 +101,7 @@ p {
    padding-top: 8rem;
    padding-bottom: 8rem;
 }
-button[type="submit"]{
+.submit-btn{
    padding: 1.7rem 5rem;
    margin-top: 2.5rem;
    border-radius: 5rem;
@@ -113,7 +113,7 @@ button[type="submit"]{
    font-family: var(--pt);
    font-weight: 600;
 }
-button[type="submit"]:hover{
+.submit-btn:hover{
    background: transparent;
    color: var(--black-color);
 }
@@ -708,6 +708,56 @@ Footer start
 }
 #footer .row.color p:hover{
    color: var(--main-color);
+}
+#footer form input{
+   padding: 1.5rem 1.3rem;
+   width: 27rem;
+   color: var(--black-color);
+   border-radius: 5rem;
+   outline: none;
+   border: none;
+   font-size: 1.5rem;
+   margin-bottom: 2rem;
+}
+#footer form .relative{
+   position: relative;
+}
+#footer form button{
+   width: 5rem; 
+   height: 5rem;
+   border-radius: 50%;
+   background: var(--main-color);
+   color: var(--white-color);
+   text-align: center;
+   outline: none;
+   border: none;
+   position: absolute;
+   top: 0.1rem;
+   left: 21.8rem;
+}
+#footer .bottom-icon li{
+   display: inline-block;
+   width: 5rem;
+   height: 5rem;
+   border-radius: 50%;
+   background: var(--dark-gray);
+   text-align: center;
+   margin-right: 1.5rem;
+   transition: 0.5s;
+}
+#footer .bottom-icon li:hover{
+   background: var(--main-color);
+}
+#footer .bottom-icon li a{
+   line-height: 6rem;
+}
+#footer .bottom-icon li a i{
+   color: var(--dark-gray-2);
+   font-size: 2.2rem;
+   transition: 0.5s;
+}
+#footer .bottom-icon li:hover i{
+   color: var(--white-color);;
 }
 /*--------
 Footer end 
