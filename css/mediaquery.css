@@ -85,8 +85,12 @@
       padding-right: 2.5rem;
    }
    .navbar{
-      padding-top: 1rem;
-      padding-bottom: 1rem;
+      padding-top: 0.8rem;
+      padding-bottom: 0.8rem;
+   }
+   .section-padding{
+      padding-top: 8.5rem;
+      padding-bottom: 8.5rem;
    }
 }
 
