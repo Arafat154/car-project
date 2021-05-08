@@ -84,6 +84,10 @@
       padding-left: 2.5rem;
       padding-right: 2.5rem;
    }
+   .section-padding{
+      padding-top: 8.5rem;
+      padding-bottom: 8.5rem;
+   }
 }
 
 @media (max-width: 300px) {
