@@ -1043,11 +1043,6 @@ p {
       font-size: 1.5rem
    }
 
-   #footer {
-      padding-left: 2rem;
-      padding-right: 2rem
-   }
-
    .navbar {
       padding-top: .8rem;
       padding-bottom: .8rem
@@ -1056,9 +1051,6 @@ p {
    .section-padding {
       padding-top: 8.5rem;
       padding-bottom: 8.5rem
-   }
-   #footer input{
-      width: 
    }
 }
 
@@ -1071,5 +1063,11 @@ p {
 @media (max-width: 375px){
    #features label {
       padding: .7rem 1.5rem
+   }
+}
+@media (min-width: 850px){
+   #footer {
+      padding-left: 2rem;
+      padding-right: 2rem
    }
 }
